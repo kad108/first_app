@@ -2,12 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.content {
-	margin: 100px 70px;
-}
-
 body {
 	color: #440777;
+	padding-top: 70px;
 }
 
 .navbar-inverse .navbar-nav > li > a,
@@ -19,6 +16,14 @@ body {
 	background-color: #062270;
 }
 
-.img_main {
-	margin-top: 40px;
+.copyright {
+	color: #00B3CC;
+	padding: 10px 0 3px;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form,
+.navbar-inverse {
+  border-color: #800020;
+  background-color: #800020;
 }
