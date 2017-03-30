@@ -35,7 +35,7 @@
 			"file": "application.html.erb",
 			"settings":
 			{
-				"buffer_size": 1535,
+				"buffer_size": 1558,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -44,7 +44,7 @@
 			"file": "/home/kadamba/first_app/app/assets/stylesheets/static_pages.scss",
 			"settings":
 			{
-				"buffer_size": 410,
+				"buffer_size": 554,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -53,7 +53,7 @@
 			"file": "/home/kadamba/first_app/app/views/static_pages/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 218,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -80,7 +80,7 @@
 			"file": "/home/kadamba/first_app/config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 253,
+				"buffer_size": 275,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -167,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -176,15 +176,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1535,
+						"buffer_size": 1558,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1489,
-								1489
+								1374,
+								1374
 							]
 						],
 						"settings":
@@ -193,10 +193,10 @@
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 817.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -205,15 +205,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 410,
+						"buffer_size": 554,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								387,
-								387
+								322,
+								322
 							]
 						],
 						"settings":
@@ -222,10 +222,10 @@
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 34.0,
+						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -234,15 +234,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 226,
+						"buffer_size": 218,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								21,
+								21
 							]
 						],
 						"settings":
@@ -254,7 +254,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -321,15 +321,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 253,
+						"buffer_size": 275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								0,
+								0
 							]
 						],
 						"settings":
