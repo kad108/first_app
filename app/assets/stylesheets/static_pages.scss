@@ -12,18 +12,15 @@ body {
   color: #00B3CC;
 }
 
-.footer {
-	background-color: #062270;
-}
-
-.copyright {
-	color: #00B3CC;
-	padding: 10px 0 3px;
-}
-
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form,
 .navbar-inverse {
   border-color: #800020;
   background-color: #800020;
+}
+
+.navbar-fixed-bottom {
+	color: #00B3CC;
+	background-color: #062270;
+	padding: 15px 0;
 }
