@@ -35,7 +35,7 @@
 			"file": "application.html.erb",
 			"settings":
 			{
-				"buffer_size": 1558,
+				"buffer_size": 1573,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -44,7 +44,7 @@
 			"file": "/home/kadamba/first_app/app/assets/stylesheets/static_pages.scss",
 			"settings":
 			{
-				"buffer_size": 554,
+				"buffer_size": 555,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -134,7 +134,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 19.0
 	},
 	"find_in_files":
 	{
@@ -176,15 +176,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1558,
+						"buffer_size": 1573,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1374,
-								1374
+								1573,
+								1573
 							]
 						],
 						"settings":
@@ -193,7 +193,7 @@
 							"tab_size": 2
 						},
 						"translation.x": 0.0,
-						"translation.y": 817.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -205,15 +205,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 554,
+						"buffer_size": 555,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								322
+								0,
+								0
 							]
 						],
 						"settings":
@@ -350,7 +350,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 19.0
 	},
 	"input":
 	{
@@ -387,7 +387,7 @@
 	"project": "application.html.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 34.0
 	},
 	"save_all_on_build": true,
 	"select_file":
