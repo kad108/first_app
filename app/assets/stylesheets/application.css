@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+hr.end_product {
+	background-color: #800020;
+	height: 1px;
+	width: 75%;
+}
+
