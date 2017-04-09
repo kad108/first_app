@@ -15,7 +15,18 @@
  */
 hr.end_product {
 	background-color: #800020;
-	height: 1px;
+	height: 0.08em;
 	width: 75%;
 }
 
+.product_title {
+    margin-top: 0;
+    margin-bottom: 0.83em;
+    text-align: center;
+}
+
+.product_description {
+    margin-top: 1.25em;
+    margin-bottom: 0.83em;
+    font-size: 1.1em;
+}
