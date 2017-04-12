@@ -4,7 +4,13 @@
 
 body {
 	color: #440777;
-	padding-top: 70px;
+	padding-top: 1.42em;
+}
+
+h1.products {
+	font-size: 3em;
+	text-align: center;
+	padding-bottom: 0.5em;
 }
 
 .navbar-inverse .navbar-nav > li > a,
@@ -26,16 +32,48 @@ body {
 }
 
 .main {
-	padding-bottom: 40px;
+	padding-bottom: 3.25em;
 }
 
 .carousel-caption {
 	color: #800020;
   font-size: 2em;
-  top: 80%;
-	text-align: center;
+  padding-bottom: 1.1em;
 }
 
 .img-carousel-center {
 	margin: auto;
+}
+
+.carousel > a:hover {
+	background-color: transparent;
+	
+}
+
+.carousel-indicators {
+  bottom: -1.3em;
+}
+
+.carousel-control.right, 
+.carousel-control.left {
+  background-image: none;
+  background-repeat: no;
+  filter: none;
+  text-shadow: 0 1px 2px rgba(128,0,32,.6);
+  width: 10%;
+}
+
+.carousel-indicators li {
+  bottom: -1.3em;
+  border: 0.08em solid #800020;
+}
+
+.carousel-indicators .active {
+  background-color: #800020;
+  opacity: 0.8;
+}
+
+.container-fluid {
+	margin-left: -2.6em;
+	margin-right: -2.5em;
 }
