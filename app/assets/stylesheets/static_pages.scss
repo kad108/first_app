@@ -4,6 +4,7 @@
 
 body {
 	color: #440777;
+	background-color: #F5F5F5;
 	padding-top: 1.42em;
 }
 
@@ -76,4 +77,28 @@ h1.products {
 .container-fluid {
 	margin-left: -2.6em;
 	margin-right: -2.5em;
+}
+
+.sed {
+	border: 1px solid #800020;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.sed > a {
+	color: #800020;
+	padding: 0 0.5em;
+}
+
+.sed > a:hover {
+	background-color: #fff;
+	color: #440777;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.well {
+	background-color: #FFF;
+	border-radius: 0.5em;
+	padding: 1.5em;
 }
