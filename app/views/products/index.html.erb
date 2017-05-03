@@ -1,17 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="page-title">Products</h1>
-
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <%= render @products %>
-    </div>
-  </div>
-  <div>
-  	<%= link_to 'New Product', new_product_path %>
-  </div>
+	<div class="row">
+		<div class="page-title">
+			Products
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<%= render @products %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5 sed">
+			<%= link_to 'New Product', new_product_path %>
+		</div>
+	</div>
 </div>
 
-<br>
 <div class="main"></div>
