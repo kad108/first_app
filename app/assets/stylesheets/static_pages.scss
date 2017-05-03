@@ -8,11 +8,7 @@ body {
 	padding-top: 1.42em;
 }
 
-h1.products {
-	font-size: 3em;
-	text-align: center;
-	padding-bottom: 0.5em;
-}
+
 
 .navbar-inverse .navbar-nav > li > a,
 .navbar-inverse .navbar-brand {
@@ -30,6 +26,11 @@ h1.products {
 	color: #00B3CC;
 	background-color: #062270;
 	padding: 15px 0;
+}
+
+.navbar-form {
+  margin-left: 0em;
+  margin-right: 0em;
 }
 
 .main {
@@ -101,4 +102,16 @@ h1.products {
 	background-color: #FFF;
 	border-radius: 0.5em;
 	padding: 1.5em;
+}
+
+.page-title {
+	color: #440777;
+	font-family: inherit;
+	font-size: 3em;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 1.25em;
+	margin-bottom: 0.625em;
+	padding-bottom: 0.5em;
+	text-align: center;
 }
