@@ -1,4 +1,34 @@
-<h1 class="products">Contact Informations</h1>
-<p>Any question?</p>
-<p>Just chant Hare Krishna <br> & be H A P P Y !</p>
-<p>If you need some help or good advice, then please call me on 07936 66 21 00</p>
+<div class="row">
+	<div class="page-title">
+		Contact Informations
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		Any question?
+		Just chant Hare Krishna <br> & be H A P P Y !
+		If you need some help or good advice, then please call me on 07936 66 21 00<br><br>
+	</div>
+</div>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= label_tag :name %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+    </div>      
+    <div class="form-group">
+      <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag :message %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+    </div>      
+  </div>
+</div>
+<%= submit_tag "Send" %>   
+<% end %>
