@@ -1,10 +1,15 @@
-<table>
-  <tbody>
-    <tr>
-      <td><p>You have received a new contact form message. The contents of the message are:</p></td>
-    </tr>
-    <tr>
-      <td><p><%= @message %></p></td>
-    </tr>
-  </tbody>
-</table>
+<body style="margin: 2em;">
+	<table align="center" border="1" width="75%" style="border-collapse: collapse">
+		<tr bgcolor="#ffffff">
+			<td align="center" style="padding: 40px 0 30px 0">
+        <%= image_tag("", width: "300") %>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#ffffff" style="padding: 1.5em">
+				<p>You have received the following new contact form message:</p>
+				<p><%= @message %></p>
+			</td>
+		</tr>
+	</table>
+</body>
