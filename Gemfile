@@ -62,4 +62,8 @@ end
 
 ruby "2.4.0"
 
+# Devise for authentication
 gem 'devise'
+
+# CanCanCan for authorization
+gem 'cancancan'
