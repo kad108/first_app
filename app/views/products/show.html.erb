@@ -8,6 +8,7 @@
     </div>
   </div>
   <div class="row">
+    <div class="col-xs-12  col-md-4 col-md-offset-4">
     <p>
       <strong>Name:</strong>
       <%= @product.name %>
@@ -15,6 +16,10 @@
     <p>
       <strong>Description:</strong>
       <%= @product.description %>
+    </p>
+    <p>
+      <strong>Image:</strong><br>
+      <%= image_tag(@product.image_url, class:"img-responsive img-carousel-center img-thumbnail") %>
     </p>
     <p>
       <strong>Image url:</strong>
@@ -28,6 +33,13 @@
       <strong>Price:</strong>
       <%= @product.price %>
     </p>
+    <p>
+      <strong>Highest Rating:</strong>
+      <%= @product.highest_rating_comment.try(:rating) %><br>
+      <strong>Comment:</strong>
+      <%= @product.highest_rating_comment.try(:body) %>
+    </p>
+    </div>
   </div>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5 sed">
