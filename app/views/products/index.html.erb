@@ -12,10 +12,16 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5">
+			<div class="pagination">
+				<%= will_paginate @products %>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5 sed">
 			<%= link_to 'New Product', new_product_path %>
 		</div>
 	</div>
 </div>
-
 <div class="main"></div>
