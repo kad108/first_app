@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
       @products = Product.all
     end
 
-    @products = @products.paginate(:page => params[:page], :per_page => 3)
+    @products = @products.paginate(:page => params[:page], :per_page => 4)
 
   end
 
@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
   def show
     @comments = @product.comments.order("created_at DESC")
     @comments = @product.comments.order("created_at DSEC").paginate(:page => params[:page], :per_page => 2)
-    @comments = @product.comments.paginate(:page => params[:page], :per_page => 2)
+    @comments = @product.comments.paginate(:page => params[:page], :per_page => 4)
   end
 
   # GET /products/new

@@ -8,34 +8,35 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-12  col-md-4 col-md-offset-4">
-    <p>
-      <strong>Name:</strong>
-      <%= @product.name %>
-    </p>
-    <p>
-      <strong>Description:</strong>
-      <%= @product.description %>
-    </p>
-    <p>
-      <strong>Image:</strong><br>
-      <%= image_tag(@product.image_url, class:"img-responsive img-carousel-center img-thumbnail") %>
-    </p>
-    <p>
-      <strong>Image url:</strong>
-      <%= @product.image_url %>
-    </p>
-    <p>
-      <strong>Color:</strong>
-      <%= @product.colour %>
-    </p>
-    <p>
+    <div class="col-xs-12 col-md-3 col-md-offset-3">
+      <p>
+        <%= image_tag(@product.image_url, class:"img-responsive img-thumbnail") %>
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-3 ">
+      <p>
+        <strong>Name:</strong>
+        <%= @product.name %>
+      </p>
+      <p>
+        <strong>Color:</strong>
+        <%= @product.colour %>
+      </p>
+      <p>
       <strong>Price:</strong>
       <%= @product.price %>
-    </p>
-    <p>
-      <strong>Average Rating:</strong> <span class="rated" data-score="<%= @product.average_rating %>"></span>
-    </p>
+      </p>
+      <p>
+        <strong>Average Rating:</strong><br><span class="rated" data-score="<%= @product.average_rating %>"></span>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
   </div>
     <div class="row">
       <div class="col-xs-12  col-md-4 col-md-offset-4">
@@ -53,7 +54,10 @@
   </div>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2 col-md-2 col-md-offset-5 sed">
-      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+
+      <% end %>
       <%= link_to 'Back', :back %>
     </div>
   </div>

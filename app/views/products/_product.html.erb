@@ -1,15 +1,25 @@
-        <div class="col-sm-2 col-md-3 well">
-          <b><h3 class="product_title"><%= product.name %></h3></b>
-          <div><%= image_tag(product.image_url, class: "img-responsive caption center-block") %>
-          </div>
-          <div class="product_description">
-            <%= product.description %>
-          </div>
-          <div>
-            Price: <%= product.price %>
-            <hr class="end_product">
-          </div>
+<div class="col-sm-2 col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <b><h3 class="product_title"><%= product.name %></h3></b>
+        <div><%= image_tag(product.image_url, class: "img-responsive caption center-block") %>
+        </div>
+        <div class="product_description">
+          <%= product.description %>
+        </div>
+        <div>
+          Price: <%= product.price %>
+          <hr class="end_product">
+        </div>
+        <% if signed_in? && current_user.admin? %>
           <div class= "sed">
           <%= link_to 'Show', product%>&nbsp;&#124;&nbsp;<%= link_to 'Edit', edit_product_path(product) %>&nbsp;&#124;&nbsp;<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
-        </div>
+          <% else %>
+            <div class= "sed">
+              <%= link_to 'Product Details', product%>
+            </div>
+        <% end %>
+    </div>
+  </div>
+</div>
