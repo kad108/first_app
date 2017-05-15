@@ -20,13 +20,18 @@ hr.end_product {
 }
 
 .product_title {
-    margin-top: 0;
-    margin-bottom: 0.83em;
-    text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 0;
+  margin-bottom: 0.83em;
+  text-align: center;
 }
 
 .product_description {
-    margin-top: 1.25em;
-    margin-bottom: 0.83em;
-    font-size: 1em;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.875em;
+  margin-top: 1.25em;
+  margin-bottom: 0.83em;
 }
