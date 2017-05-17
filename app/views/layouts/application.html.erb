@@ -3,6 +3,8 @@
   <head>
     <title>FirstApp</title>
 
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css'>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<%= csrf_meta_tags %>
@@ -49,10 +51,8 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container  -->
 		</nav>
-
-
-    <%= yield %>
-
+		<p id="notice"><%= alert %></p>
+		<%= yield %>
 
     <footer class="navbar navbar-fixed-bottom">
       <div class="container">
