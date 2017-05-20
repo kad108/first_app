@@ -60,3 +60,6 @@ group :production do
 end
 
 gem 'rails-controller-testing'
+
+#Payment Forms with Stripe
+gem 'stripe'

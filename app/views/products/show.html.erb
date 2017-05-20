@@ -15,10 +15,6 @@
     </div>
     <div class="col-xs-12 col-md-3 ">
       <p class="product_description">
-        <strong>Name:</strong>
-        <%= @product.name %>
-      </p>
-      <p class="product_description">
         <strong>Color:</strong>
         <%= @product.colour %>
       </p>
@@ -29,6 +25,11 @@
       <p class="product_description">
         <strong>Average Rating:</strong><br><span class="rated" data-score="<%= @product.average_rating %>"></span>
       </p>
+
+      <%= form_tag "/payments/create" do %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+
     </div>
   </div>
   <div class="row">
