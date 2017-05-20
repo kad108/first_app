@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  
   devise_for :users
   resources :users
-  resources :products
   resources :orders, only: [:index, :show, :create, :destroy]
-
   resources :products do
     resources :comments
   end
@@ -14,6 +13,7 @@ Rails.application.routes.draw do
 	get 'static_pages/landing_page'
   root 'products#index'
   post 'static_pages/thank_you'
+  post 'payments/create'
 
     # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
