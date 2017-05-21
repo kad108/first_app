@@ -5,7 +5,7 @@
         <div><%= image_tag(product.image_url, class: "img-responsive caption center-block") %>
         </div>
         <div class="product_description">
-          <%= product.description %>
+          <%= truncate(product.description, length: 47) %>
           <br><br>
           Price: <%= product.price %>
           <hr class="end_product">

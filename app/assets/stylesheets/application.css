@@ -36,6 +36,75 @@ hr.end_product {
   margin-bottom: 0.83em;
 }
 
+.comments {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 1em;
+line-height: 1.2em;
+margin: 1.25em 0 0.83em 1em;
+}
+
 .stripe-button-el {
 	margin-left: 1.25em;
 }
+
+/* Pagination styles */
+
+.digg_pagination {
+	background: #F5F5F5;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  cursor: default;
+  text-align: center;
+  /* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+	}
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+	}
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #062270;
+  color: #00B3CC;
+  border: 1px solid #062270;
+	}
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #00B3CC;
+	}
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #00B3CC;
+  border-color: #00B3CC;
+	}
+.digg_pagination .page_info {
+  background: #062270;
+  color: #00B3CC;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+	}
+.digg_pagination .page_info b {
+  color: #00B3CC;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+	}
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+	}
+* html .digg_pagination {
+  height: 1%;
+	}
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+  }
