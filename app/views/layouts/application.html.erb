@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstApp</title>
+    <title>Buy a Cat</title>
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css'>
 
@@ -51,7 +51,17 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container  -->
 		</nav>
-		<p id="notice"><%= alert %></p>
+		<div class="row">
+			<div class="col-xs-12 col-md-4 col-md-offset-4">
+				<% if notice %>
+					<p id="notice" class="alert alert-info text-center"><%= alert %></p>
+				<% end %>
+				<% if alert %>
+					<p id="notice" class="alert alert-danger text-center"><%= alert %></p>
+				<% end %>
+			</div>
+		</div>
+
 		<%= yield %>
 
     <footer class="navbar navbar-fixed-bottom">
