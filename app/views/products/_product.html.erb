@@ -1,6 +1,7 @@
 <div class="col-sm-2 col-md-3">
   <div class="panel panel-default">
     <div class="panel-body">
+    <% cache product do %>
       <b><h3 class="product_title"><%= product.name %></h3></b>
         <div><%= image_tag(product.image_url, class: "img-responsive caption center-block") %>
         </div>
@@ -19,6 +20,7 @@
               <%= link_to 'Product Details', product%>
             </div>
         <% end %>
+      <% end %>
     </div>
   </div>
 </div>

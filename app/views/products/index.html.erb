@@ -8,7 +8,9 @@
 	</div>
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<%= render @products %>
+			<% cache (cache_key_for_products) do %>
+				<%= render @products %>
+			<% end %>
 		</div>
 	</div>
 	<div class="row">
