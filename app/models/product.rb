@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
 	has_many :orders
 	has_many :comments
-	validates :name, :description, presence: true
+	validates :name, :description, :price, presence: true
 
 	def highest_rating_comment
   	comments.rating_desc.first
