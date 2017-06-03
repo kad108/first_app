@@ -66,3 +66,6 @@ gem 'stripe'
 
 #Dalli for Caching
 gem 'dalli'
+
+#Redis
+gem 'redis-rails'

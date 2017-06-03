@@ -16,8 +16,8 @@
         <%= @product.colour %>
       </p>
       <p class="product_description">
-      <strong>Price:</strong>
-      <%= @product.price %>
+        <strong>Price:</strong>
+        <%= @product.price %>
       </p>
       <p class="product_description">
         <strong>Average Rating:</strong><br><span class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></span>
@@ -27,7 +27,6 @@
         <%= hidden_field_tag(:product_id, @product.id) %>
         <%= render partial: "shared/stripe_checkout_button" %>
       <% end %>
-
     </div>
   </div>
   <div class="row">
@@ -35,6 +34,9 @@
       <p class="product_description">
         <strong>Description:</strong>
         <%= @product.description %>
+      </p>
+      <p>
+        Views: <%= @product.views %>
       </p>
     </div>
   </div>
@@ -51,16 +53,13 @@
       <div class="digg_pagination ">
         <%= will_paginate @comments %>
       </div>
-    </div>
-  </div>
-  </div>
-  <div class="row">
-    <div class="main"></div>
-    <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-5 sed">
-      <% if signed_in? && current_user.admin? %>
-        <%= link_to 'Edit', edit_product_path(@product) %> |
-      <% end %>
-      <%= link_to 'Back', :back %>
+      <div class="main"></div>
+      <div class="sed">
+        <% if signed_in? && current_user.admin? %>
+          <%= link_to 'Edit', edit_product_path(@product) %> |
+        <% end %>
+        <%= link_to 'Back', :back %>
+      </div>
     </div>
   </div>
   <div class="main"></div>
