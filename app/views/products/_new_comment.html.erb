@@ -1,5 +1,4 @@
 <% if signed_in? %>
-  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
   <div class="sed">
     <h4>Add a review</h4>
