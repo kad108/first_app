@@ -16,8 +16,6 @@ $(document).on('turbolinks:load ajaxSuccess', function(){
    	zoomType: "lens", lensShape: "round", lensSize: 300
    });
 
-   $('.alert').delay(50).fadeIn('normal', function() {
-      $(this).delay(2500).fadeOut();
-   });
+   $('.alert').delay(2500).fadeOut();
 
 });
