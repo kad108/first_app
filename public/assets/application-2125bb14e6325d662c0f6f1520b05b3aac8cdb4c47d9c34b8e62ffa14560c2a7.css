@@ -1,0 +1,404 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  margin: 33px;
+}
+
+/* line 9, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 1.25em;
+}
+
+/* line 16, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #440777;
+  text-decoration: none;
+}
+/* line 26, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #800020;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 38, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 42, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 49, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 54, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 58, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 0.1em;
+  background-color: #F5F5F5;
+}
+
+/* line 64, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  /*  background-color: #f0f0f0; */
+}
+/* line 73, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  border-radius: 5px 5px 0 0;
+  font-size: 1em;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #800020;
+  color: #fff;
+}
+/* line 85, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 1em;
+  list-style: disc;
+  margin-left: 0;
+}
+
+/* line 92, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 96, /home/kadamba/first_app/app/assets/stylesheets/scaffolds.scss */
+.col-xs-12 {
+  overflow: hidden;
+}
+/* line 5, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+body {
+  color: #440777;
+  background-color: #F5F5F5;
+  padding-top: 1.42em;
+}
+
+/* line 11, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #00B3CC;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* line 20, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #440777;
+  background-color: #00B3CC;
+}
+
+/* line 25, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-brand {
+  color: #00B3CC;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 0.7px;
+}
+
+/* line 33, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form,
+.navbar-inverse {
+  border-color: #800020;
+  background-color: #800020;
+}
+
+/* line 40, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-fixed-bottom {
+  color: #00B3CC;
+  background-color: #062270;
+  padding: 15px 0;
+}
+
+/* line 46, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.navbar-form {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+
+/* line 51, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.main {
+  padding-bottom: 3.25em;
+}
+
+/* line 55, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  color: #800020;
+  font-size: 2em;
+  padding-bottom: 1.1em;
+}
+
+/* line 61, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.img-carousel-center {
+  margin: auto;
+}
+
+/* line 65, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel > a:hover {
+  background-color: transparent;
+}
+
+/* line 70, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  bottom: -1.3em;
+}
+
+/* line 74, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+  background-repeat: no;
+  filter: none;
+  text-shadow: 0 1px 2px rgba(128, 0, 32, 0.6);
+  width: 10%;
+}
+
+/* line 83, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  bottom: -1.3em;
+  border: 0.08em solid #800020;
+}
+
+/* line 88, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: #800020;
+  opacity: 0.8;
+}
+
+/* line 93, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.sed {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  border: 1px solid #800020;
+  border-radius: 5px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* line 101, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.sed > a {
+  color: #800020;
+  padding: 0 0.5em;
+}
+
+/* line 106, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.sed > a:hover {
+  background-color: #fff;
+  color: #440777;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 113, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.page-title {
+  color: #440777;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 2.1875em;
+  font-weight: 300;
+  line-height: 2.8125em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+/* line 123, /home/kadamba/first_app/app/assets/stylesheets/static_pages.scss */
+.a {
+  text-decoration: none;
+  color: #440777;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+hr.end_product {
+	background-color: #800020;
+	height: 0.08em;
+	width: 75%;
+}
+
+.product_title {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 0;
+  margin-bottom: 0.83em;
+  text-align: center;
+}
+
+.product_description {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.875em;
+  margin-top: 1.25em;
+  margin-bottom: 0.83em;
+}
+
+.comments {
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+font-size: 1em;
+line-height: 1.2em;
+margin: 1.25em 0 0.83em 1em;
+}
+
+.stripe-button-el {
+	margin-left: 1.25em;
+}
+
+/* Pagination styles */
+
+.digg_pagination {
+	background: #F5F5F5;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+  cursor: default;
+  text-align: center;
+  /* self-clearing method: */ }
+.digg_pagination a, .digg_pagination span, .digg_pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+	}
+.digg_pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+	}
+.digg_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #062270;
+  color: #00B3CC;
+  border: 1px solid #062270;
+	}
+.digg_pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #00B3CC;
+	}
+.digg_pagination a:hover, .digg_pagination a:focus {
+  color: #00B3CC;
+  border-color: #00B3CC;
+	}
+.digg_pagination .page_info {
+  background: #062270;
+  color: #00B3CC;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+	}
+.digg_pagination .page_info b {
+  color: #00B3CC;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+	}
+.digg_pagination:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+	}
+* html .digg_pagination {
+  height: 1%;
+	}
+*:first-child + html .digg_pagination {
+  overflow: hidden;
+  }
