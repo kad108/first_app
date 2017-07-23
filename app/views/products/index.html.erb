@@ -8,10 +8,8 @@
 	</div>
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
-			<% cache (cache_key_for_products) do %>
-				<% @products.each do |product| %>
-					<%= render partial: "product", locals: {product: product} %>
-				<% end %>
+			<% @products.each do |product| %>
+				<%= render partial: "product", locals: {product: product} %>
 			<% end %>
 		</div>
 	</div>
