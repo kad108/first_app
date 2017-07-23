@@ -64,6 +64,8 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1
   # DELETE /products/1.json
+
+  @product = Product.find(params[:id])
   def destroy
     @product.destroy
     respond_to do |format|
