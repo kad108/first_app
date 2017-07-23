@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+  respond_to :json, :html
+
   # GET /products
   # GET /products.json
   def index
@@ -18,7 +20,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   # GET /products/1.json
-  def show    
+  def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
     @product.viewed!
   end
@@ -65,7 +67,6 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
-    @product = Product.find(params[:id])
     @product.destroy
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
