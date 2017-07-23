@@ -9,13 +9,10 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
-
     else
       @products = Product.all
     end
-
     @products = @products.paginate(:page => params[:page], :per_page => 4)
-
   end
 
   # GET /products/1
